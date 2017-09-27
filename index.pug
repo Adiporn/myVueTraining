@@ -1,0 +1,20 @@
+body#tableApp
+   form.search-bar(role='search')
+      input(type='search' placeholder='Search products', v-model='searchText')
+      button(type='submit')
+         img(src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png")
+
+   table.tables
+      thead
+        tr
+          th Product
+          th Sizes
+          th Price
+          th Discounted Price
+      tbody
+         template(v-repeat="products | filterBy searchText")
+           tr
+             td {{ name }}
+             td {{ size }}
+             td {{ '$' + price }}
+             td {{ '$' + discount }}
