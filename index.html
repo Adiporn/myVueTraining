@@ -13,12 +13,35 @@
 </head>
 
 <body>
-  <div class="Header">Durable goods </div>
-<body id="tableApp">
-  <form class="search-bar" role="search">
-    <input type="search" placeholder="Search products" v-model="searchText"/>
-    <button type="submit"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png"/></button>
-  </form>
+  <div class="Header" id="h1">Durable goods 
+    <div id="h2">Check goods</div>
+  </div>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Status: online<br> Contract NO. ## <br><ul id="demo">
+         </a>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  <body id="tableApp">
   <table class="tables">
     <thead>
       <tr>
@@ -40,30 +63,11 @@
     </tbody>
   </table>
 </body>
-<body id="tableTest">
-  <table class="tables">
-    <thead>
-      <tr>
-        <th>ListName</th>
-        <th>Quitity</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <template v-repeat="DurableList">
-        <tr>
-          <td>{{ ListName }}</td>
-          <td>{{ Quitity }}</td>
-          <td>{{ price }}</td>
-        </tr>
-      </template>
-    </tbody>
-  </table>
-</body>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.7/vue.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script  src="js/index.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>    
+<script  src="js/index.js"></script>
 
 </body>
 </html>

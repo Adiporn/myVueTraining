@@ -3,6 +3,10 @@
 /* The version of Neat used in this Pen was 1.8.* */
 @import "neat"; 
 
+/* _Navbar.scss */
+* {
+  font-size: 14px;
+}
 .tables {
   $base-border-color: gainsboro !default;
   $base-border-radius: 3px !default;

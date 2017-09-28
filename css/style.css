@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+
 html {
   box-sizing: border-box;
 }
-
 *, *::after, *::before {
   box-sizing: inherit;
 }
@@ -10,21 +11,27 @@ html {
   background-color: rgba(27, 56, 94, 0.8);
   width: auto;
   text-align: center;
-  padding: 10%;
+  padding: 5%;
   font-size: 50px;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 2px;
   font-family: 'Raleway', sans-serif;
 }
-/* 
-#date{
-  font-size: 15px;
-  text-align: right;
-  color: white;
-  margin-left: 80%;
-  margin-right: 40%;
-  
-} */
+.Header #h2 {
+  font-size: 20px;
+}
+
+.container{
+  background-color: #1B2F57;
+  display: inline-flex;
+  height: 10em;
+  padding-top: 2em;
+  padding-bottom: 40px;
+  color: floralwhite;
+  padding-left: 0.5em;
+  font-family: 'Prompt', sans-serif;
+  /* border-radius: 4px; */
+}
 
 .tables {
   border-collapse: separate;
@@ -161,4 +168,7 @@ form.search-bar button[type=submit]:disabled {
 form.search-bar button[type=submit] img {
   height: 12px;
   opacity: 0.7;
+}
+a.Navbar-brand{
+  font-size: 10px;
 }

@@ -6,6 +6,11 @@ function Discount(price) {
    return FPrice;
 }
 
+function Count(price){
+    var mul = price*2;
+    return mul;
+}
+
 var tableModel = {
    products: [
       { 
@@ -35,38 +40,54 @@ var tableModel = {
    ]
 }
 
-//Add data for learning
-var TestModel = {
-    DurableList: [ 
-        {
-        ListName: "Computer",
-        Quitity: 15,
-        price: 20000
-        },
-        {
-        ListName: "Projector",
-        Quitity: 40,
-        price: 34000
-        }
-    ]
-}
-
 var tableApp = new Vue({
-   el: '#tableApp',
-   data: tableModel,
-   methods: {
-      ProductFil: function (e) {
-         
-      }
-   }
-});
-
-var tableTest = new Vue({
-    el: '#tableTest',
-    data: TestModel,
+    el: '#tableApp',
+    data: tableModel,
     methods: {
        ProductFil: function (e) {
           
        }
     }
  });
+
+new Vue({
+    el:'Test',
+    data:{
+        ListName: '',
+        Quitity:'',
+        Price:'',
+        ListName:{
+            'computer':'Computer',
+            'c2':'C2',
+        },
+        Quitity:{
+            'sfks':'Sfks',
+            'gggg':'GGGG'
+        },
+        Price:{
+            2:2,
+            3:3,
+
+        }
+    }
+});
+
+// var tableTest = new Vue({
+//     el: '#tableTest',
+//     data: { DurableList: [ 
+//         {
+//         ListName: "Computer",
+//         Quitity: 15,
+//         price: 20000
+//         },
+//         {
+//         ListName: "Projector",
+//         Quitity: 40,
+//         price: 34000
+//         }
+//     ]
+
+//     }
+//  });
+
+  
